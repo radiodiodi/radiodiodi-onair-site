@@ -1,0 +1,225 @@
+/* RGB 
+$color1: rgb(51, 102, 153);
+$color2: rgb(146, 220, 229);
+$color3: rgb(238, 229, 233);
+$color4: rgb(124, 124, 124);
+$color5: rgb(214, 73, 51);
+*/
+
+/*
+--dark-blue: rgba(51, 102, 153, 1);
+--light-blue: rgba(146, 220, 229, 1);
+--platinum: rgba(238, 229, 233, 1);
+--white: rgba(250, 250, 250, 1);
+--gray: rgba(124, 124, 124, 1);
+--opaque-gray: rgba(124, 124, 124, 0.2);
+--red: rgba(214, 73, 51, 1);
+*/
+
+body {
+    margin: 0;
+    color: #3d3d3d;
+    background-color:rgba(250, 250, 250, 1);
+    font-family: "Asap", Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-image: url("banner_transparent.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vw;
+}
+
+a {
+    color: rgba(250, 250, 250, 1);
+}
+
+.navigation-main ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+figure {
+    margin: 5px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+.section-main {
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.section-team {
+  text-align: center;
+}
+
+.image-border {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.map-border {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.map {
+    max-width: 100%;
+}
+
+.dude {
+  margin: 20px 0;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #eee5e9;
+  background-color: #7c7c7c;
+}
+
+.partner-logo {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#tter-logo {
+    margin-top: 10px;
+    max-height: 200px;
+    width: auto;
+}
+
+h5 {
+  margin: 10px 0;
+}
+
+section.lightblue {
+    color: #fff;
+    background-color: rgba(51, 102, 153, 1);
+}
+
+a.black {
+    color: #3d3d3d;
+}
+
+.navigation-main {
+  text-align: center;
+  padding: 25px 0;
+  background-color: rgba(51, 102, 153, 1);
+  color: #fff;
+}
+
+.navigation-main ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navigation-main ul li a {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid rgba(250, 250, 250, 1);
+}
+
+.accordion {
+    background-color: rgba(250, 250, 250, 1);
+    color: #3d3d3d;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 10px 0;
+    border-radius: 3px;
+    font-size: large;
+}
+
+.accordion::after {
+    content: "\25BC";
+    float: right;
+}
+
+.accordion.active::after {
+    content: "\25B2";
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #ddd;
+}
+
+.panel {
+    padding: 0 20px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.panel.show {
+    opacity: 1;
+    padding: 10px 20px;
+    max-height: 500px;
+}
+
+.dude-description {
+    display: block;
+    line-height: 1.5;
+    font-size: small;
+    margin-top: 5px;
+}
+
+.dude-name {
+    line-height: 1.5;
+    margin: 0;
+    font-size: medium;
+}
+
+.dude-contact {
+    line-height: 1.5;
+    display: block;
+    font-size: small;
+}
+
+@media (max-width: 600px) {
+    .navigation-main ul li a {
+        padding: 10px;
+    }
+    .navigation-main {
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav ul {
+        margin: 0;
+    }
+    .navigation-main ul li a {
+        width: 150px;
+    }
+}
